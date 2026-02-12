@@ -1,20 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Single type selector for both heading elements */
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Class selector rules for bold and italic */
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        /* Type selector for all blockquote elements */
+        blockquote {
+            padding: 10px;
+            margin: 10px 50px;
+            border: 2px dashed red;
+            font-family: Helvetica, sans-serif;
+            text-align: justify;
+            background-color: lightyellow;
+        }
+
+        /* Large-type class selector with blockquote element prefix */
+        blockquote.large-type {
+            font-size: 1.5em; /* Adjusts the "large-type" scale */
+        }
+    </style>
+</head>
 <body>
-<h1>css Practice</h1>
-<h2>Programming Quotes</h2>
-<blockquote>
-  "The use of COBOL cripples the mind; its teaching should, therefore,
-  be regarded as a <span class="bold">criminal offense</span>."<br>
-  -- Edsgar Dijkstra
-</blockquote>
-<blockquote class="large-type">
-  "C makes it easy to shoot yourself in the foot; C++ makes
-  it harder, but when you do, it blows away your whole leg. "<br>
-  -- Bjarne Stroustrup
-</blockquote>
-<blockquote>
-  "Man is the best computer we can put aboard a spacecraft
-  and the only one that can be <span class="italic">mass produced</span>
-  with unskilled labor."<br>
-  -- Wernher von Braun
-</blockquote>
+    <h1>css Practice</h1>
+    <h2>Programming Quotes</h2>
+
+    <blockquote>
+        "The use of COBOL cripples the mind; its teaching should, therefore, 
+        be regarded as a <span class="bold">criminal offense</span>."<br>
+        -- Edsgar Dijkstra
+    </blockquote>
+
+    <blockquote class="large-type">
+        "C makes it easy to shoot yourself in the foot; C++ makes 
+        it harder, but when you do, it blows away your whole leg."<br>
+        -- Bjarne Stroustrup
+    </blockquote>
+  
+    <blockquote>
+        "Man is the best computer we can put aboard a spacecraft 
+        and the only one that can be <span class="italic">mass produced</span> 
+        with unskilled labor."<br>
+        -- Wernher von Braun
+    </blockquote>
 </body>
+</html>
