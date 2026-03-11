@@ -3,47 +3,54 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<body> {
+
+<style>
+body{
     font-family: serif;
 }
 /* OUTER GRID */
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 800px;
-    margin: auto;   /* center horizontally */
-    border: 2px solid black;
+    width:800px;
+    margin: auto;
+    border:2px solid black;
 }
+
 /* sections */
-.left, .middle, .right{
-    border: 1px solid black;
-    padding: 20px;
+.left,.middle,.right{
+    border:1px solid black;
+    padding:20px;
     text-align: center;
 }
+
 /* calendar title */
 .middle h2{
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
+
 /* INNER GRID */
 .calendar{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 3px;
+    grid-template-columns:repeat(7,1fr);
+    gap:4px;
 }
-/* days row */
+
+/* day labels */
 .day{
     font-weight: bold;
 }
+
 /* dates */
 .date{
     padding:5px;
 }
 
-/* highlight March 16 onward */
-.calendar .date:nth-child(n+18){
-    background: gold;
+/* highlight March 16 and after */
+.calendar .date:nth-of-type(n+17){
+    background:gold;
 }
-</body>
+</style>
 <body>
 <div class="container">
     <!-- Left Section -->
