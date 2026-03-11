@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+body{
+    font-family: serif;
+}
+/* OUTER GRID */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 800px;
+    margin: auto;   /* center horizontally */
+    border: 2px solid black;
+}
+/* sections */
+.left, .middle, .right{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+/* calendar title */
+.middle h2{
+    margin-bottom: 10px;
+}
+/* INNER GRID */
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 3px;
+}
+/* days row */
+.day{
+    font-weight: bold;
+}
+/* dates */
+.date{
+    padding:5px;
+}
+
+/* highlight March 16 onward */
+.calendar .date:nth-child(n+18){
+    background: gold;
+}
+<body>
+<div class="container">
+    <!-- Left Section -->
+    <div class="left">
+        <h1>MARCH<br>MADNESS</h1>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle">
+        <h2>March</h2>
+        <div class="calendar">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+
+            <!-- Dates -->
+            <div class="date"></div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+
+        </div>
+    </div>
+    <div class="right">
+        <h3>The Tigers</h3>
+        <p>
+            Fight for the Tigers strong and true,<br>
+            Roaring loud in black and blue.<br>
+            Raise the flag and cheer anew,<br>
+            Victory for Mizzou!
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
