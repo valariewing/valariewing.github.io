@@ -123,11 +123,40 @@ footer {
     text-align: center;
     padding: 10px;
 }
+    /* Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Stack everything vertically */
+    main {
+        display: block;
+    }
+
+    /* nav stack instead of horizontal */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    /* Images scale properly */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Dropdown fix for mobile */
+    .dropdown-content {
+        position: static;
+    }
 </style>
 
     <header>
         <h1>How to Survive Hostile Aliens</h1>
         <p>description goes here</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </header>
 
     <nav>
