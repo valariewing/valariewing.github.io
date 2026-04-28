@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvester Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<style>
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+}
+
+
+/* Wireframe boxes */
+header,
+.hero,
+footer,
+.box,
+.card,
+.image-box{
+border:2px solid black;
+}
+
+
+/* Header */
+header{
+padding:20px;
+text-align:center;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+
+/* Hero */
+.hero{
+padding:60px;
+text-align:center;
+}
+
+
+/* Overview Grid */
+.overview-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:30px;
+}
+
+.box{
+padding:60px;
+}
+
+
+/* Types */
+.types{
+padding:30px;
+text-align:center;
+}
+
+.type-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+padding:50px;
+}
+
+
+/* Gallery */
+.gallery{
+padding:30px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.image-box{
+padding:60px;
+}
+
+
+/* Footer */
+footer{
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+
+/* Responsive */
+@media(max-width:768px){
+
+.overview-grid{
+grid-template-columns:1fr;
+}
+
+.type-grid,
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+}</style>
+
+<header>
+<h1>Harvester</h1>
+
+<nav>
+<ul>
+<li>Home</li>
+<li>Predator</li>
+<li>Xenomorph</li>
+<li>Harvester</li>
+</ul>
+</nav>
+</header>
+
+
+<section class="hero">
+<h2>Harvester Species</h2>
+</section>
+
+
+<!-- Reuse existing about-grid -->
+<section class="about-grid">
+
+<div class="box">
+Image Placeholder
+</div>
+
+<div class="box">
+<h2>Species Overview</h2>
+<p>
+Information about Harvesters goes here.
+</p>
+</div>
+
+</section>
+
+
+<!-- Reuse existing card-grid -->
+<section class="abilities">
+
+<h2>Traits</h2>
+
+<div class="card-grid">
+
+<div class="card">
+Strength
+</div>
+
+<div class="card">
+Armor
+</div>
+
+<div class="card">
+Intelligence
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Reuse gallery -->
+<section class="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<div class="image-box">Image 1</div>
+<div class="image-box">Image 2</div>
+<div class="image-box">Image 3</div>
+
+</div>
+
+</section>
+
+
+<footer>
+Footer
+</footer>
+
+</body>
+</html>
