@@ -8,8 +8,125 @@
 </head>
 <body>
   
+<style>
+  *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+}
+
+
+/* Wireframe boxes */
+.box,
+.card,
+.image-box,
+header,
+.hero,
+footer{
+border:2px solid black;
+}
+
+
+/* Header */
+header{
+padding:20px;
+text-align:center;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+
+/* Hero */
+.hero{
+padding:60px;
+text-align:center;
+}
+
+
+/* About Grid */
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:30px;
+}
+
+.box{
+padding:60px;
+}
+
+
+/* Abilities */
+.abilities{
+padding:30px;
+text-align:center;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+padding:50px;
+}
+
+
+/* Gallery */
+.gallery{
+padding:30px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.image-box{
+padding:60px;
+}
+
+
+/* Footer */
+footer{
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+
+/* Responsive */
+@media(max-width:768px){
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.card-grid,
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+  
   <header>
-<h1>Predator</h1>
+<h1> The Predator</h1>
 
 <nav>
 <ul>
