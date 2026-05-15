@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survival Tips</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background-color:#050505;
+color:white;
+}
+
+/* Wireframe boxes */
+header,
+.hero,
+footer,
+.tip-box,
+.warning-box,
+table{
+border:2px solid #ff1a1a;
+}
+
+/* Header */
+header{
+background-color:#0a0a0a;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#ff1a1a;
+margin-bottom:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff1a1a;
+}
+
+/* Hero */
+.hero{
+padding:60px;
+text-align:center;
+background:linear-gradient(to right,#050505,#2b0000);
+}
+
+.hero h2{
+color:#ff1a1a;
+font-size:2.5rem;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.1rem;
+}
+
+/* Main Content */
+.survival-section{
+padding:30px;
+}
+
+.tip-box{
+background-color:#140000;
+padding:30px;
+border-radius:10px;
+margin-bottom:25px;
+}
+
+.tip-box h2{
+color:#ff1a1a;
+margin-bottom:15px;
+}
+
+.tip-box p{
+line-height:1.7;
+margin-bottom:15px;
+}
+
+.tip-box ul{
+line-height:1.8;
+margin-left:25px;
+}
+
+/* Warning Box */
+.warning-box{
+background-color:#260000;
+padding:30px;
+border-radius:10px;
+margin:30px;
+text-align:center;
+}
+
+.warning-box h2{
+color:#ff1a1a;
+margin-bottom:15px;
+}
+
+.warning-box p{
+line-height:1.7;
+}
+
+/* Table Section */
+.table-section{
+padding:30px;
+text-align:center;
+}
+
+.table-section h2{
+color:#ff1a1a;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background-color:#0a0a0a;
+}
+
+th,
+td{
+border:1px solid #ff1a1a;
+padding:15px;
+text-align:center;
+}
+
+th{
+background-color:#140000;
+color:#ff1a1a;
+}
+
+/* Footer */
+footer{
+background-color:#0a0a0a;
+padding:20px;
+text-align:center;
+margin-top:30px;
+color:#ff1a1a;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+body{
+background-color:#1a0000;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+}
+
+table{
+font-size:14px;
+}
+
+.hero h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+
+
+<header>
+
+<h1>Survival Tips</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+<h2>Alien Survival Tips</h2>
+<p>
+A guide for surviving encounters with Predators, Xenomorphs, and Harvesters.
+</p>
+</section>
+
+
+<section class="survival-section">
+
+<div class="tip-box">
+<h2>Surviving a Predator</h2>
+<p>
+Predators are intelligent hunters who use stealth, weapons, and advanced technology. The best chance of survival is to avoid becoming interesting prey.
+</p>
+
+<ul>
+<li>Stay out of open areas where you can be easily tracked.</li>
+<li>Avoid carrying weapons unless absolutely necessary because Predators may see armed targets as worthy prey.</li>
+<li>Use mud, smoke, or heat interference to confuse thermal vision.</li>
+<li>Do not challenge a Predator directly unless there is no other choice.</li>
+</ul>
+</div>
+
+
+<div class="tip-box">
+<h2>Surviving a Xenomorph</h2>
+<p>
+Xenomorphs are fast, aggressive, and extremely dangerous in close spaces. Their acid blood makes direct attacks risky.
+</p>
+
+<ul>
+<li>Keep distance at all times.</li>
+<li>Avoid dark tunnels, vents, and hive-like areas.</li>
+<li>Do not attack at close range because their acid blood can burn through surfaces.</li>
+<li>Destroy eggs before they hatch, but never approach them without protection.</li>
+</ul>
+</div>
+
+
+<div class="tip-box">
+<h2>Surviving a Harvester</h2>
+<p>
+Harvesters are massive destructive creatures that overwhelm environments through size, strength, and resource consumption.
+</p>
+
+<ul>
+<li>Evacuate the area as soon as possible.</li>
+<li>Avoid battlefields, destroyed zones, and resource-heavy locations.</li>
+<li>Use long-distance observation instead of close contact.</li>
+<li>Do not rely on small weapons because Harvesters are heavily armored.</li>
+</ul>
+</div>
+
+</section>
+
+
+<section class="table-section">
+
+<h2>Survival Comparison Table</h2>
+
+<table>
+<tr>
+<th>Alien</th>
+<th>Main Danger</th>
+<th>Best Survival Strategy</th>
+<th>Worst Mistake</th>
+</tr>
+
+<tr>
+<td>Predator</td>
+<td>Stealth hunting and advanced weapons</td>
+<td>Hide, confuse thermal vision, avoid looking like prey</td>
+<td>Trying to fight directly</td>
+</tr>
+
+<tr>
+<td>Xenomorph</td>
+<td>Speed, acid blood, hive attacks</td>
+<td>Keep distance and avoid enclosed spaces</td>
+<td>Entering the hive alone</td>
+</tr>
+
+<tr>
+<td>Harvester</td>
+<td>Massive size, armor, and destruction</td>
+<td>Evacuate and stay far away</td>
+<td>Staying near the destruction zone</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<div class="warning-box">
+<h2>Final Warning</h2>
+<p>
+The safest survival strategy is avoidance. Predators, Xenomorphs, and Harvesters are all deadly in different ways, so escaping early is always better than fighting.
+</p>
+</div>
+
+
+<footer>
+<p>Alien Survival Tips Page</p>
+</footer>
+
+</body>
+</html>
