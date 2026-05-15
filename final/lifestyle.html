@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifestyle Comparison</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background-color:#050505;
+color:white;
+}
+
+/* Wireframe boxes */
+header,
+.hero,
+footer,
+.box,
+.card,
+table{
+border:2px solid #39ff14;
+}
+
+/* Header */
+header{
+background-color:#0a0a0a;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#39ff14;
+margin-bottom:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#39ff14;
+}
+
+/* Hero */
+.hero{
+padding:60px;
+text-align:center;
+background:linear-gradient(to right,#050505,#102010);
+}
+
+.hero h2{
+color:#39ff14;
+font-size:2.5rem;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.1rem;
+}
+
+/* Lifestyle Grid */
+.lifestyle-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
+}
+
+.box{
+background-color:#0f1a0f;
+padding:40px;
+border-radius:10px;
+}
+
+.box h2{
+color:#39ff14;
+margin-bottom:15px;
+}
+
+.box p{
+line-height:1.6;
+}
+
+/* Table Section */
+.table-section{
+padding:30px;
+text-align:center;
+}
+
+.table-section h2{
+color:#39ff14;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background-color:#0a0a0a;
+}
+
+th,
+td{
+border:1px solid #39ff14;
+padding:15px;
+text-align:center;
+}
+
+th{
+background-color:#0f1a0f;
+color:#39ff14;
+}
+
+/* Similarities and Differences */
+.compare-section{
+padding:30px;
+text-align:center;
+}
+
+.compare-section h2{
+color:#39ff14;
+margin-bottom:20px;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background-color:#0a0a0a;
+padding:40px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+background-color:#163016;
+transform:scale(1.03);
+}
+
+.card h3{
+color:#39ff14;
+margin-bottom:15px;
+}
+
+.card ul{
+text-align:left;
+line-height:1.8;
+}
+
+/* Footer */
+footer{
+background-color:#0a0a0a;
+padding:20px;
+text-align:center;
+margin-top:30px;
+color:#39ff14;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+body{
+background-color:#001a00;
+}
+
+.lifestyle-grid,
+.card-grid{
+grid-template-columns:1fr;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+}
+
+table{
+font-size:14px;
+}
+
+}
+
+</style>
+
+
+<header>
+
+<h1>Lifestyle Comparison</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="predator.html">Predator</a></li>
+<li><a href="xenomorph.html">Xenomorph</a></li>
+<li><a href="harvester.html">Harvester</a></li>
+<li><a href="lifestyle.html">Lifestyle</a></li>
+<li><a href="habitat.html">Habitat</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+<h2>Alien Lifestyle Comparison</h2>
+<p>
+This page compares the lifestyle, behavior, social structure, and survival habits of the Predator, Xenomorph, and Harvester species.
+</p>
+</section>
+
+
+<section class="lifestyle-grid">
+
+<div class="box">
+<h2>Predator Lifestyle</h2>
+<p>
+Predators live by a warrior and hunter lifestyle. Their culture values strength, honor, skill, and trophies earned from dangerous hunts. They travel across planets searching for worthy opponents.
+</p>
+</div>
+
+<div class="box">
+<h2>Xenomorph Lifestyle</h2>
+<p>
+Xenomorphs live as part of a hive system controlled by a Queen. Their lifestyle focuses on survival, reproduction, protecting the hive, and spreading their species through hosts.
+</p>
+</div>
+
+<div class="box">
+<h2>Harvester Lifestyle</h2>
+<p>
+Harvesters live through destruction and consumption. Their behavior focuses on dominating environments, consuming resources, and overwhelming anything that threatens them.
+</p>
+</div>
+
+</section>
+
+
+<section class="table-section">
+
+<h2>Lifestyle Comparison Table</h2>
+
+<table>
+<tr>
+<th>Alien Species</th>
+<th>Main Lifestyle</th>
+<th>Social Structure</th>
+<th>Main Goal</th>
+</tr>
+
+<tr>
+<td>Predator</td>
+<td>Hunter and warrior culture</td>
+<td>Organized by honor, rank, and hunting skill</td>
+<td>Prove strength through successful hunts</td>
+</tr>
+
+<tr>
+<td>Xenomorph</td>
+<td>Hive-based survival</td>
+<td>Queen-led colony with drones and warriors</td>
+<td>Protect the hive and reproduce</td>
+</tr>
+
+<tr>
+<td>Harvester</td>
+<td>Destruction and resource consumption</td>
+<td>Less organized, more domination-focused</td>
+<td>Consume resources and control environments</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="compare-section">
+
+<h2>Similarities and Differences</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Similarities</h3>
+<ul>
+<li>All three species are dangerous and aggressive.</li>
+<li>All three focus on survival in hostile environments.</li>
+<li>Each species uses its strengths to dominate others.</li>
+<li>All three are major threats to humans and other life forms.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Differences</h3>
+<ul>
+<li>Yautja live by honor and hunting traditions.</li>
+<li>Xenomorphs live through hive instincts and reproduction.</li>
+<li>Harvesters live through destruction and consumption.</li>
+<li>Yautja use technology, Xenomorphs use biology, and Harvesters use size and power.</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>Alien Lifestyle Comparison Page</p>
+</footer>
+
+</body>
+</html>
