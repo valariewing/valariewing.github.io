@@ -1,1 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habitat Comparison</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background-color:#0b0f1a;
+color:white;
+}
+
+/* Wireframe boxes */
+header,
+.hero,
+footer,
+.box,
+.card,
+.image-box,
+table{
+border:2px solid #00e5ff;
+}
+
+/* Header */
+header{
+background-color:#111827;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#00e5ff;
+margin-bottom:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* Hero */
+.hero{
+padding:60px;
+text-align:center;
+background:linear-gradient(to right,#111827,#1e293b);
+}
+
+.hero h2{
+color:#00e5ff;
+font-size:2.5rem;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.1rem;
+}
+
+/* Habitat Grid */
+.habitat-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
+}
+
+.box{
+background-color:#1e293b;
+padding:40px;
+border-radius:10px;
+}
+
+.box h2{
+color:#00e5ff;
+margin-bottom:15px;
+}
+
+.box p{
+line-height:1.6;
+}
+
+/* Table Section */
+.table-section{
+padding:30px;
+text-align:center;
+}
+
+.table-section h2{
+color:#00e5ff;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background-color:#111827;
+}
+
+th,
+td{
+border:1px solid #00e5ff;
+padding:15px;
+text-align:center;
+}
+
+th{
+background-color:#1e293b;
+color:#00e5ff;
+}
+
+/* Similarities and Differences */
+.compare-section{
+padding:30px;
+text-align:center;
+}
+
+.compare-section h2{
+color:#00e5ff;
+margin-bottom:20px;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background-color:#111827;
+padding:40px;
+border-radius:10px;
+}
+
+.card h3{
+color:#00e5ff;
+margin-bottom:15px;
+}
+
+.card ul{
+text-align:left;
+line-height:1.8;
+}
+
+/* Footer */
+footer{
+background-color:#111827;
+padding:20px;
+text-align:center;
+margin-top:30px;
+color:#00e5ff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+body{
+background-color:#32004d;
+}
+
+.habitat-grid,
+.card-grid{
+grid-template-columns:1fr;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+}
+
+table{
+font-size:14px;
+}
+
+}
+
+</style>
+
+
+<header>
+
+<h1>Habitat Comparison</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="predator.html">Predator</a></li>
+<li><a href="xenomorph.html">Xenomorph</a></li>
+<li><a href="harvester.html">Harvester</a></li>
+<li><a href="lifestyle.html">Lifestyle</a></li>
+<li><a href="habitat.html">Habitat</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+<h2>Alien Habitat Comparison</h2>
+<p>
+This page compares the natural and preferred habitats of the Predator, Xenomorph, and Harvester species.
+</p>
+</section>
+
+
+<section class="habitat-grid">
+
+<div class="box">
+<h2>Predator Habitat</h2>
+<p>
+Predators often hunt in dangerous environments such as jungles, forests, war zones, and remote planets. They prefer places where prey is difficult to track and where survival requires strength and skill.
+</p>
+</div>
+
+<div class="box">
+<h2>Xenomorph Habitat</h2>
+<p>
+Xenomorphs can survive in dark, enclosed, and hostile environments. They are commonly found in spaceships, underground hives, abandoned colonies, and isolated planets where they can build and protect their hive.
+</p>
+</div>
+
+<div class="box">
+<h2>Harvester Habitat</h2>
+<p>
+Harvesters thrive in large, open, and devastated environments. They are often connected to destroyed ecosystems, alien battlefields, and planets where they consume resources and dominate the land.
+</p>
+</div>
+
+</section>
+
+
+<section class="table-section">
+
+<h2>Habitat Comparison Table</h2>
+
+<table>
+<tr>
+<th>Alien Species</th>
+<th>Preferred Habitat</th>
+<th>Environment Type</th>
+<th>Survival Advantage</th>
+</tr>
+
+<tr>
+<td>Predator</td>
+<td>Jungles, forests, hunting grounds, war zones</td>
+<td>Natural and dangerous environments</td>
+<td>Uses stealth, strength, and technology to hunt prey</td>
+</tr>
+
+<tr>
+<td>Xenomorph</td>
+<td>Dark hives, spaceships, colonies, tunnels</td>
+<td>Dark, enclosed, and isolated environments</td>
+<td>Can hide, reproduce, and protect the hive</td>
+</tr>
+
+<tr>
+<td>Harvester</td>
+<td>Destroyed planets, battlefields, resource-rich areas</td>
+<td>Open, hostile, and devastated environments</td>
+<td>Uses size, armor, and power to dominate ecosystems</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="compare-section">
+
+<h2>Similarities and Differences</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Similarities</h3>
+<ul>
+<li>All three species can survive in dangerous environments.</li>
+<li>All three are connected to violence, survival, and domination.</li>
+<li>Each species adapts to its surroundings in a different way.</li>
+<li>All three are threats to humans and other life forms.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Differences</h3>
+<ul>
+<li>Predators choose habitats for hunting.</li>
+<li>Xenomorphs choose habitats for nesting and reproduction.</li>
+<li>Harvesters destroy habitats by consuming resources.</li>
+<li>Predators rely on technology, Xenomorphs rely on biology, and Harvesters rely on size and force.</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>Alien Habitat Comparison Page</p>
+</footer>
+
+</body>
+</html>
