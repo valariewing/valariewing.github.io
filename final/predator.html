@@ -6,17 +6,20 @@
 <title>Predator Page</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
   
+<body>
 <style>
-  *{
+/* Reset */
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
 body{
-font-family:Arial;
+font-family:Arial, sans-serif;
+background-color:#0b0f1a;
+color:white;
 }
 
 
@@ -27,14 +30,20 @@ font-family:Arial;
 header,
 .hero,
 footer{
-border:2px solid black;
+border:2px solid #00e5ff;
 }
 
 
 /* Header */
 header{
+background-color:#111827;
 padding:20px;
 text-align:center;
+}
+
+header h1{
+color:#00e5ff;
+margin-bottom:15px;
 }
 
 nav ul{
@@ -45,11 +54,28 @@ list-style:none;
 margin-top:15px;
 }
 
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
 
 /* Hero */
 .hero{
 padding:60px;
 text-align:center;
+background:linear-gradient(to right,#111827,#1e293b);
+}
+
+.hero h2{
+color:#00e5ff;
+font-size:2.5rem;
 }
 
 
@@ -62,7 +88,9 @@ padding:30px;
 }
 
 .box{
+background-color:#1e293b;
 padding:60px;
+border-radius:10px;
 }
 
 
@@ -70,6 +98,11 @@ padding:60px;
 .abilities{
 padding:30px;
 text-align:center;
+}
+
+.abilities h2{
+margin-bottom:20px;
+color:#00e5ff;
 }
 
 .card-grid{
@@ -80,7 +113,15 @@ margin-top:20px;
 }
 
 .card{
+background-color:#111827;
 padding:50px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background-color:#1e293b;
 }
 
 
@@ -88,6 +129,11 @@ padding:50px;
 .gallery{
 padding:30px;
 text-align:center;
+}
+
+.gallery h2{
+margin-bottom:20px;
+color:#00e5ff;
 }
 
 .gallery-grid{
@@ -98,20 +144,28 @@ margin-top:20px;
 }
 
 .image-box{
+background-color:#1e293b;
 padding:60px;
+border-radius:10px;
 }
 
 
 /* Footer */
 footer{
+background-color:#111827;
 padding:20px;
 text-align:center;
 margin-top:30px;
+color:#00e5ff;
 }
 
 
 /* Responsive */
 @media(max-width:768px){
+
+body{
+background-color:#32004d;
+}
 
 .about-grid{
 grid-template-columns:1fr;
@@ -123,7 +177,9 @@ grid-template-columns:1fr;
 }
 
 }
+
 </style>
+
   
   <header>
 <h1> The Predator</h1>
