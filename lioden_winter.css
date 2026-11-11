@@ -5,11 +5,7 @@
 /* BACKGROUND PLACEHOLDER: a snowy blue gradient.
    Later, uncomment background-image and replace the sample URL. */
 body {
-    background-image: url("https://cdn.shopify.com/s/files/1/0062/8532/8445/files/Stevens_Cranberry_1_BB.jpg?v=1692892422");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #193F65 url("https://cdn.shopify.com/s/files/1/0062/8532/8445/files/Stevens_Cranberry_1_BB.jpg?v=1692892422") center center / cover no-repeat fixed !important;
     color: #193F65;
     font-family: Georgia, serif;
 }
