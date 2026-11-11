@@ -6,8 +6,7 @@
    Later, uncomment background-image and replace the sample URL. */
 body {
     background-color: #193F65;
-    background-image: linear-gradient(155deg, #C5E6F5, #193F65);
-    /* background-image: url("YOUR-BACKGROUND-IMAGE-URL"); */
+    background-image: url "https://laidbackgardener.blog/wp-content/uploads/2024/02/Capture-decran-le-2024-02-05-a-20.54.09.png";
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
