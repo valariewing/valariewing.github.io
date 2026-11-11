@@ -1,0 +1,116 @@
+/* WINTER DEN: ice blue #C5E6F5, deep blue #193F65, red #A52E40.
+   White is used for readable text and snowy highlights.
+   This is a starter theme; check it on your den after installation. */
+
+/* BACKGROUND PLACEHOLDER: a snowy blue gradient.
+   Later, uncomment background-image and replace the sample URL. */
+body {
+    background-color: #193F65;
+    background-image: linear-gradient(155deg, #C5E6F5, #193F65);
+    /* background-image: url("YOUR-BACKGROUND-IMAGE-URL"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #193F65;
+    font-family: Georgia, serif;
+}
+
+/* MAIN PAGE */
+.container.main {
+    background: #C5E6F5 !important;
+    border: 2px solid #193F65;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+.col-md-9 { background: transparent !important; }
+
+/* NAVIGATION */
+.topbar, .navbar {
+    background: #193F65 !important;
+    color: #FFFFFF !important;
+    border-bottom: 3px solid #A52E40 !important;
+}
+.topbar a, .navbar li a {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+.navbar li a:hover, .navbar li a:focus {
+    background: #A52E40 !important;
+    color: #FFFFFF !important;
+}
+
+/* HEADINGS AND LINKS */
+h1, h2, h3 { color: #193F65 !important; }
+a:link, a:visited { color: #193F65; }
+a:hover, a:focus { color: #A52E40; text-decoration: underline; }
+.breadcrumb { background: #FFFFFF !important; }
+.breadcrumb .active { color: #193F65 !important; }
+
+/* TABLES */
+.table {
+    background: #FFFFFF !important;
+    color: #193F65 !important;
+    border: 1px solid #193F65 !important;
+    border-collapse: separate;
+}
+.top, .bottom, th {
+    background: #193F65 !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+.top a, .bottom a, th a { color: #FFFFFF !important; }
+.table .left, .inner-table .left {
+    background: #C5E6F5 !important;
+    color: #193F65 !important;
+}
+.inner-table .right, .table .right {
+    background: #FFFFFF !important;
+    color: #193F65 !important;
+}
+.table .right_odd, .table .right_cub {
+    background: #C5E6F5 !important;
+    color: #193F65 !important;
+}
+
+/* SIDEBAR AND DEN BOXES */
+.panel, .feature, div.left, .cave-grid, .mound-grid {
+    background: #FFFFFF !important;
+    color: #193F65 !important;
+    border: 1px solid #193F65 !important;
+    border-radius: 6px;
+    box-shadow: none !important;
+}
+.cave-grid, .mound-grid { border-bottom: 3px solid #A52E40 !important; }
+.progress { background: #C5E6F5 !important; }
+.progress-bar { background: #193F65 !important; color: #FFFFFF !important; }
+.chat_light { background: #FFFFFF !important; color: #193F65 !important; }
+.chat_dark { background: #C5E6F5 !important; color: #193F65 !important; }
+
+/* NOTICES */
+.alert {
+    background: #FFFFFF !important;
+    color: #193F65 !important;
+    border: 1px solid #193F65 !important;
+}
+.alert-warning, .alert-danger {
+    border-left: 5px solid #A52E40 !important;
+}
+
+/* TEXT FIELDS AND BUTTONS */
+input, select, textarea {
+    background: #FFFFFF !important;
+    color: #193F65 !important;
+    border: 1px solid #193F65 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+button, input[type="submit"], input[type="button"], .btn {
+    background: #A52E40 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #A52E40 !important;
+    text-shadow: none !important;
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, .btn:hover {
+    background: #193F65 !important;
+    border-color: #193F65 !important;
+}
