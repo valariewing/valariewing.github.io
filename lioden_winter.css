@@ -12,7 +12,7 @@ body {
 
 /* MAIN PAGE */
 .container.main {
-    background: #C5E6F5 !important;
+    background: rgba(197, 230, 245, 0.85) !important;
     border: 2px solid #193F65;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
@@ -42,7 +42,7 @@ a:hover, a:focus { color: #A52E40; text-decoration: underline; }
 
 /* TABLES */
 .table {
-    background: #FFFFFF !important;
+    background: rgba(255, 255, 255, 0.75) !important;
     color: #193F65 !important;
     border: 1px solid #193F65 !important;
     border-collapse: separate;
@@ -68,7 +68,7 @@ a:hover, a:focus { color: #A52E40; text-decoration: underline; }
 
 /* SIDEBAR AND DEN BOXES */
 .panel, .feature, div.left, .cave-grid, .mound-grid {
-    background: #FFFFFF !important;
+    background: rgba(255, 255, 255, 0.75) !important;
     color: #193F65 !important;
     border: 1px solid #193F65 !important;
     border-radius: 6px;
