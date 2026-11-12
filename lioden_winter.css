@@ -19,6 +19,9 @@ body {
 .col-md-9 { background: transparent !important; }
 
 /* NAVIGATION */
+div.container.main>div:nth-child(1)>nav>dib.navbar-header>a::after{
+   content: url ("https://static.lioden.com/images/items/Other/apparcticmane.png"):
+}
 .topbar, .navbar {
     background: #193F65 !important;
     color: #FFFFFF !important;
@@ -31,9 +34,6 @@ body {
 .navbar li a:hover, .navbar li a:focus {
     background: #A52E40 !important;
     color: #FFFFFF !important;
-}
-div.container.main>div:nth-child(1)>nav>dib.navbar-header>a::after{
-   content: url ("https://static.lioden.com/images/items/Other/apparcticmane.png"):
 }
 
 /* HEADINGS AND LINKS */
