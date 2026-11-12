@@ -19,8 +19,8 @@ body {
 .col-md-9 { background: transparent !important; }
 
 /* NAVIGATION */
-div.container.main>div:nth-child(1)>nav>dib.navbar-header>a::after{
-   content: url ("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after{
+   content: url("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
 }
 .topbar, .navbar {
     background: #193F65 !important;
