@@ -40,20 +40,9 @@ a:hover, a:focus { color: #A52E40; text-decoration: underline; }
 .breadcrumb { background: #FFFFFF !important; }
 .breadcrumb .active { color: #193F65 !important; }
 
-/* NAVIGATION LOGO */
-.navbar-header > a img {
-    display: none !important;
-}
-
-.navbar-header > a::after {
-    content: "";
-    display: inline-block;
-    width: 150px;
-    height: 80px;
-    background-image: url("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+/* REPLACE LIODEN LOGO */
+.navbar-header .navbar-brand > img {
+    content: url("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
 }
 
 /* TABLES */
