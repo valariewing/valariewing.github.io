@@ -33,7 +33,7 @@ body {
     color: #FFFFFF !important;
 }
 div.container.main>div:nth-child(1)>nav>dib.navbar-header>a::after{
-   content: url (https://static.lioden.com/images/items/Other/apparcticmane.png):
+   content: url ("https://static.lioden.com/images/items/Other/apparcticmane.png"):
 }
 
 /* HEADINGS AND LINKS */
