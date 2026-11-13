@@ -33,6 +33,11 @@ body {
     color: #FFFFFF !important;
 }
 
+/* REPLACE LIODEN LOGO */
+.navbar-header .navbar-brand > img {
+    content: url("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
+}
+
 /* HEADINGS AND LINKS */
 h1, h2, h3 { color: #193F65 !important; }
 a:link, a:visited { color: #193F65; }
