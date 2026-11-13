@@ -36,6 +36,8 @@ body {
 /* REPLACE LIODEN LOGO */
 .navbar-header .navbar-brand > img {
     content: url("https://static.lioden.com/images/explorenew/winter/confusedcryptidday.png");
+    width: 200px !important;
+    height: auto !important;
 }
 
 /* HEADINGS AND LINKS */
